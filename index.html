@@ -1,0 +1,191 @@
+<html>
+<head><title> HOME </title>
+
+
+<script>
+var i=1;
+var x=new Array(11);
+
+function change()
+{
+
+   if(i<11)
+   {
+    i++;
+   }
+   else
+   {
+    i=1;
+   }
+document.getElementById("imagename").src="z"+i+".jpg";    
+}
+  
+ 
+  
+  
+</script>
+
+
+
+<style>
+
+#a1{position:fixed; width:100%; height:15%; left:0%; top:0%; background-color: #00ff99;
+                   box-shadow:0px 1px 4px black; overflow:hidden; font-size:500%; font-style:sherif;
+				   font-color:red;font-face:bold;}
+
+#a2{left:0%; top:30%; width:100%; height:70%; position:absolute; background-color:black;}
+	#c{top:2%; left:0%; width:100%; height:100%; position:relative; background-color:white;}
+				#y1{top:40%; width:8%; left:0%; height:20%; position:absolute; cursor:pointer;}
+				#y2{top:40%; width:8%; right:0%; height:20%; position:absolute; cursor:pointer; }
+
+
+#a3{left:20%; top:15%; width:60%; height:15%; background-color:#ff9966; position:absolute;}				   
+    #b1{top:18%;  left:10%; width:15%; height:70%; position:absolute; background-color:#000080; Font-size:100%;}
+            #b1:hover{background-color:lime;}
+	#b2{top:18%;  left:25%; width:15%; height:70%; position:absolute; background-color:navy;}
+	        #b2:hover{background-color:lime;}
+	#b3{top:18%; left:40%; width:15%; height:70%; position:absolute; background-color:navy; }
+	       #b3:hover{background-color:lime;}
+	#b4{top:18%; left:55%; width:15%; height:70%; position:absolute; background-color:navy; }
+			#b4:hover{background-color:lime;}
+			#y3{top:44%; left:1%; width:100%; height:60%; position:relative; font-size:100%;}
+			#y4{top:46%; left:1%; width:100%; height:60%; position:relative; font-size:100%;}
+			#y5{top:48%; left:1%; width:100%; height:60%; position:relative; font-size:100%;}
+			#y6{top:50%; left:1%; width:100%; height:60%; position:relative; font-size:100%;}
+			#y7{top:52%; left:1%; width:100%; height:60%; position:relative; font-size:100%;}
+			#y8{top:54%; left:1%; width:100%; height:60%; position:relative; font-size:100%;}  	
+	        #y9{top:56%; left:1%; width:100%; height:60%; position:relative; font-size:100%;}
+		    #y10{top:58%; left:1%; width:100%; height:60%; position:relative; font-size:100%;}
+		    #y11{top:60%; left:1%; width:100%; height:60%; position:relative; font-size:100%;}
+		
+                        	.m{background-color:navy;visibility:hidden; }
+				   #b4:hover .m{background-color:navy;visibility:visible; }
+                                                                                                                          	  	
+	#b5{top:18%; left:70%; width:15%; height:70%; position:absolute; background-color: navy;}
+	         #b5:hover{background-color:lime;}
+	#b6{top:18%; left:85%; width:15%; height:70%; position:absolute; background-color:navy;}
+	         #b6:hover{background-color:lime;}
+	
+#a5{left:0%; top:15%; width:30%; height:15%; background-color:#ff9966; position:absolute;}
+	#b9{top:0%; left:0%; position:absolute; width:300%; height:100%;}
+					#b9:hover{width:350%; height:110%; left:2%; top:6%;}
+    #b10{top:5%; left:26%; position:absolute; width:100%; height:100%;}
+	  
+    #b11{top:0%; left:52%; position:absolute; width:300%; height:100%;}
+					#b11:hover{width:350%; height:110%; left:57%; top:6%;}
+                                                                	                            
+	                                                                                     
+#a4{left:0%; top:103%; width:100%; height:60%; position:absolute; background:black;}		   
+   
+   #b7{right:0%; top:1%; width:100%; height:100%; position:absolute; background:black; animation:d1 1 6s; border-style:solid;}
+				@keyframes d1
+					{
+						from{right:-70%; width:100%;}
+						to{left:0%; width:100%;}
+					}	  
+
+#m1{left:0%; top:80%; width:3%; height:5%; position:absolute; background-color:#3b5998; border-bottom-right-radius:15%; border-top-right-radius:15%;}
+
+#m2:hover #m1{right:20%; width:25%;  animation:q1 infinite 3s;}
+
+@keyframes q1
+{
+ from{left:0%; width:5%;}
+ to{right:20%; width:14%}; 
+}
+
+
+#n1{left:0%; top:75%; width:3%; height:5%; position:absolute; background-color:#00ff45; border-bottom-right-radius:15%; border-top-right-radius:15%;}
+
+#n2:hover #n1{right:20%; width:25%;  animation:q2 infinite 3s;}
+
+@keyframes q2
+{
+ from{left:0%; width:5%;}
+ to{right:20%; width:14%}; 
+}		
+
+#o1{left:0%; top:85%; width:3%; height:5%; position:absolute; background-color:#d34836; border-bottom-right-radius:15%; border-top-right-radius:15%;}
+
+#o2:hover #o1{right:20%; width:25%;  animation:q3 infinite 3s;}
+
+@keyframes q3
+{
+ from{left:0%; width:5%;}
+ to{right:20%; width:14%}; 
+}	
+
+#p1{left:0%; top:90%; width:3%; height:5%; position:absolute; background-color:red; border-bottom-right-radius:15%; border-top-right-radius:15%;}
+
+#p2:hover #p1{right:20%; width:25%;  animation:q4 infinite 3s;}
+
+@keyframes q4
+{
+ from{left:0%; width:5%;}
+ to{right:20%; width:14%}; 
+}			
+
+					
+	</style>
+</head>
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.8";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<div id="a2">
+             <div id="c"><img src="z4.jpg" width="100%" height="100%" id="imagename"> 
+                          
+						<div id="y1"><font onclick="change()" size="20%" color="white">    <<  </font>            </div>
+						<div id="y2"><font onclick="change()" size="20%" color="white">    >>  </font>           </div>
+			</div>
+</div>
+
+
+<div id="a5"><div id="b9" > <img src="khd.jpg " height="100%" width="8%"> </div>
+            <div id="b10" >    <img src="ministry.png">                      </div>
+			 <div id="b11">  <img src="download.png " height="100%" width="8%">  </div>  </div>
+			  <center>       
+<div id="a3"><div id="b1"><a href="index.html">  <br><font color="white">  HOME          </font> </a>     </div>
+            <div id="b2"><a href="about.html"><br><font color="white">    ABOUT                </font></a>    </div>
+			<div id="b3"><A href="polo.html"> <br><font color="white">  INVEST IN JHARKHAND     </font></a>            </div>
+			<div id="b4"> <br><font color="white"> RESOURCES </font>
+				<div id="y3" class="m"><a href="mines.html"><font color="white"> Mines and Minerals  </font></a>  </div> 
+				<div id="y4" class="m"><a href="forest.html"><font color="white">    Forests and Environment </font> </a></div> 
+				<div id="y5" class="m"><a href="auto.html"><font color="white">     Automobiles and Auto Components </font> </a> </div> 
+				<div id="y6" class="m"><a href="energy.html"><font color="white"> Energy Infrastructure  </font> </a> </div> 
+				<div id="y7" class="m"><a href="industry.html"><font color="white"> Industrial Infrasturcture </font></a>      </div> 		
+				<div id="y8" class="m"><a href="tourism.html"><font color="white">  Tourism  </font></a> </div> 
+				<div id="y9" class="m"><a href="textile.html"><font color="white">  Textile  </font></a> </div> 
+				<div id="y10"class="m"><a href="edu.html"><font color="white"> Educational & Skill Development </font> </a>   </div> 
+				<div id="y11"class="m"><a href="agri.html"><font color="white"> Agri & Food Processing  </font> </a>   </div> 
+		     </div>
+			<div id="b5"><a href="booking.html"> <br><font color="white">BOOKING                    </font> </a>                   
+		</div>
+		
+		<div id="b6"><a href="contact.html"> <br><font color="white">CONTACT  US......</font></a> </div>
+</center>
+		</div>
+
+
+<div id="a4">
+						<div id="b7"><iframe width="100%" height="400" 
+					           	src="https://www.youtube.com/embed/qgVhIiTtOOU" frameborder="0" allowfullscreen></iframe>
+                            		 				</div>
+					
+</div>
+
+
+<div id="m2"><div id="m1"><img src="twi.jpg" width="100%" height="100%">            </div>  </div>
+<div id="n2"><div id="n1"><div class="fb-like" data-href="http://argusacademy.com/modi/" data-layout="box_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>                           </div>  </div>
+                             </div>  </div>
+<div id="p2"><div id="p1"><img src="ins.jpg" width="100%" height="100%">                            </div>  </div> 
+
+
+<div id="a1"><font color="black"><marquee><b>  MOMENTUM JHARKHAND   </b>  </marquee></font>         </div>
+</body>
+</html>

@@ -1,0 +1,259 @@
+<html> 
+<head><title> CONTACT </title>
+
+<script>
+
+function checkname()
+{
+ var n, nc ,vn;
+ n=document.getElementById("c1");
+ 
+ nc= /^[a-zA-Z ]+$/;
+ vn=document.getElementById("c1").value;
+ 
+ if(!n.value.match(nc)  ||  vn.charAt(0)==' ')
+{
+document.getElementById("name").innerHTML="** check name";
+return 1;
+}
+else
+ {
+document.getElementById("name").innerHTML=" " ;
+return 0;
+ }
+}
+
+
+function checknumber()
+{
+ var p, pc ;
+ p=document.getElementById("c2");
+ 
+ pc= /^[0-9]{10,10}$/;
+ 
+ if(!p.value.match(pc) )
+{
+document.getElementById("mobile").innerHTML="** check number";
+return 1;
+}
+else 
+ {
+document.getElementById("mobile").innerHTML='';
+return 0;
+ }
+}
+
+
+function checkemail()
+{
+ var e, ec;
+ e=document.getElementById("c3");
+ 
+ ec= /^[0-9a-zA-Z_-]+\@[a-zA-Z0-9]+\.[a-zA-Z]{2,6}$/;
+ 
+ if(!e.value.match(ec) )
+{
+document.getElementById("mail").innerHTML="** check mail";
+return 1;
+}
+else 
+ {
+document.getElementById("mail").innerHTML='';
+return 0;
+ }
+}
+  
+
+
+ function contact()
+ {
+ if(checkname()==0 || checknumber()==0 || checkemail()==0 )
+ {
+ var a,b,c,d;
+ a=document.getElementById("c1").value;
+ b=document.getElementById("c2").value;
+ c=document.getElementById("c3").value;
+ d=document.getElementById("c4").value;
+ }
+ else
+ {
+ checkname();
+ checknumber();
+ checkemail();
+ 
+ alert("plz check entered data");
+ }
+ 
+ } 
+  
+
+</script>
+
+<style>
+#a11{position:fixed; width:100%; height:15%; left:0%; top:0%; background-color: #00ff99;
+                   box-shadow:0px 1px 4px black; overflow:hidden; font-size:500%; font-style:sherif;
+				   font-color:red;font-face:bold;}
+
+ #a5{left:0%; top:15%; width:30%; height:15%; background-color:#ff9966; position:absolute;}
+	#y20{top:0%; left:0%; position:absolute; width:300%; height:100%;}
+					#y20:hover{width:350%; height:110%; left:2%; top:6%;}
+    #y21{top:5%; left:26%; position:absolute; width:100%; height:100%;}
+	  
+    #y22{top:0%; left:52%; position:absolute; width:300%; height:100%;}
+					#y22:hover{width:350%; height:110%; left:57%; top:6%;}
+				                                                     
+				   
+				   
+#a13{left:30%; top:15%; width:70%; height:15%; background-color:#ff9966; position:absolute;}				   
+    #b11{top:18%;  left:10%; width:15%; height:70%; position:absolute; background-color:#000080; Font-size:100%;}
+            #b11:hover{background-color:lime;}
+	#b12{top:18%;  left:25%; width:15%; height:70%; position:absolute; background-color:navy;}
+	        #b12:hover{background-color:lime;}
+	#b13{top:18%; left:40%; width:15%; height:70%; position:absolute; background-color:navy; }
+	        #b13:hover{background-color:lime;}
+	#b14{top:18%; left:55%; width:15%; height:70%; position:absolute; background-color:navy;}
+				#b14:hover   #y11{top:44%; left:1%; width:100%; height:60%; position:relative; font-size:100%;}
+				#b14:hover   #y12{top:46%; left:1%; width:100%; height:60%; position:relative; font-size:100%;}
+				#b14:hover   #y13{top:48%; left:1%; width:100%; height:60%; position:relative; font-size:100%;}
+				#b14:hover   #y14{top:50%; left:1%; width:100%; height:60%; position:relative; font-size:100%;}
+				#b14:hover   #y15{top:52%; left:1%; width:100%; height:60%; position:relative; font-size:100%;}
+				#b14:hover   #y16{top:54%; left:1%; width:100%; height:60%; position:relative; font-size:100%;}  	
+	            #b14:hover   #y17{top:56%; left:1%; width:100%; height:60%; position:relative; font-size:100%;}
+				#b14:hover   #y18{top:58%; left:1%; width:100%; height:60%; position:relative; font-size:100%;}
+				#b14:hover   #y19{top:60%; left:1%; width:100%; height:60%; position:relative; font-size:100%;}
+	    #b14:hover{background-color:lime;}	
+		
+		    	               .m{background-color:navy;visibility:hidden;}
+				   #b14:hover .m{background-color:navy;visibility:visible;}
+		
+		
+	#b15{top:18%; left:70%; width:15%; height:70%; position:absolute; background-color: navy;}
+	       #b15:hover{background-color:lime;}      
+	#b16{top:18%; left:85%; width:15%; height:70%; position:absolute; background-color:navy;}
+		#b16:hover{background-color: lime;}
+                                              
+
+											  
+      
+                                                                            
+											  
+											  
+#a1{top:50%; left:10%; height:19%; width:80%; position:absolute; background-color:navy;font-size:600%; border-style:solid;}
+#a2{top:70%; left:10%; height:90%; width:80%; position:absolute; background-color:#ccffee;}
+    #b1{top:10%; left:0%; height:25%; width:100%; position:absolute; background-color:#ffccff;font-size:100%;}
+    #b2{top:40%; left:20%; height:50%; width:53%; position:absolute; background-color:black;}
+
+#bat{left:0%; top:29%; width:100%; height:2%; position:absolute; background-color:black;}
+
+
+
+#box{left:10%; top:110%; width:80%; height:120%; position:absolute; background-color:ccffeb; font:200%;}
+
+body{background-color:black;}
+
+</style>
+</head>
+
+
+
+<body>
+
+
+<div id="bat">             </div>
+<div id="a1"><font color="white"> CONTACT  US........    </font>         </div>
+
+<div id="a2"><div id="b1">   <br><br>
+            <center> Venue: </center>
+             <br>
+              <center> Khelgaon, Sports city, Hotwar, Ranchi-835217<center>			 </div>
+	<div id="b2">  <div id="mapouter"><div id="gmap_canvas"><iframe width="600" height="300"
+	frameborder="0" scrolling="no" marginheight="0" src="https://maps.google.com/maps?q=Khelgaon, Ranchi,
+	Jharkhand, India, &t=&z=14&ie=UTF8&iwloc=&output=embed" marginwidth="0"></iframe>
+	<a href="http://www.embedgooglemap.net">google maps on my website</a></div>
+	<style>#gmap_canvas{height:500px;width:600px;}#mapouter{overflow:hidden;height:500px;width:600px;}
+	</style></div>                        </div><br>
+	<br>
+	
+	
+	
+	<div id="box"><center><br>
+                   <br>
+                   <br>
+				   <br>
+                   <br>
+				   <br>
+                   <br>
+              <font size="100%">       OFFICE:NEAR MCO office, Ranchi<br>  
+                     CONTACT NO.=5122 5122 56                      </font>
+                       <br>
+                   <br><br>
+                   <br><br>
+                   <br>  	          
+<form>
+    <br>
+	<br>
+	NAME: <input type="text" id="c1" onblur="checkname();">
+			<span id="name"></span>
+    <br>
+	<br>
+	<br>
+    YOUR CONTACT: <input type="text" id="c2" maxlength="10" onblur="checknumber();">
+			<span id="mobile"> </span>
+    <br>
+	<br>
+    <br>	
+   INQUIRY QUESTION:<textarea rows="5" cols="40" id="c3">           </textarea>
+   <br>
+   <br>
+   <br>
+   EMAIL: <input type="text" id="c4" onblur="checkemail();">
+			<span id="mail"> </span>
+<br>
+<br>
+<br>
+<br>
+<br>
+<button onclick="contact()">    SUMBIT </button>
+
+
+</form>
+</center>								   
+
+
+</div>	
+</div>
+
+
+
+<div id="a5"><div id="y20"> <img src="khd.jpg " height="100%" width="8%">         </div>
+             <div id="y21">    <img src="ministry.png">                           </div>
+			 <div id="y22">   <img src="download.png " height="100%" width="8%">   </div> </div>
+			  <center>       
+<div id="a13">            <div id="b11"><a href="index.html">  <br><font color="white">  HOME          </font> </a>     </div>
+            <div id="b12"><a href="about.html"><br><font color="white">    ABOUT                </font></a>    </div>
+			<div id="b13"><A href="polo.html"> <br><font color="white">  INVEST IN JHARKHAND     </font></a>            </div>
+			<div id="b14"> <br><font color="white"> RESOURCES </font>
+				<div id="y11" class="m"><a href="mines.html"><font color="white"> Mines and Minerals   </font>  </a>  </div> 
+				<div id="y12" class="m"><a href="forest.html"><font color="white">    Forests & Enviroment  </font> </a></div> 
+				<div id="y13" class="m"><a href="auto.html"><font color="white">     Automobiles and Auto Components </font></a> </div> 
+				<div id="y14" class="m"> <a href="energy.html" ><font color="white"> Energy Infrastructure    </font></a> </div> 
+				<div id="y15" class="m"><a href="industry.html"><font color="white"> Industrial Infrastructure </font></a>      </div> 		
+				<div id="y16" class="m"> <a href="tourism.html"><font color="white">  Tourism  </font> </a> </div> 
+				<div id="y17" class="m"><a href="textile.html"><font color="white">  Textile  </font></a> </div> 
+				<div id="y18" class="m"><a href="edu.html"><font color="white">Educational & Skill Development </font> </a>   </div> 
+			    <div id="y19" class="m"><a href="agri.html"> <font color="white"> Agri & Food Processing    </font>    </a>   </div> 
+		     </div>
+			<div id="b15"><a href="booking.html"> <br><font color="white">BOOKING                    </font> </a>                   
+		</div>
+		
+		<div id="b16"><a href="contact.html"> <br><font color="white">CONTACT  US......</font></a> </div>
+</center>
+		</div>
+		
+		
+		
+
+<div id="a11"><font color="black"><marquee><b>  MOMENTUM JHARKHAND   </b>  </marquee></font>         </div>
+
+</body>
+</html>

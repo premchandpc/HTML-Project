@@ -1,0 +1,285 @@
+<html>
+<head><title> BOOKING STATUS </title>
+
+<script>
+
+function checkname()
+{
+ var n, nc ,vn;
+ n=document.getElementById("c1");
+ 
+ nc= /^[a-zA-Z ]+$/;
+ vn=document.getElementById("c1").value;
+ 
+ if(!n.value.match(nc)  ||  vn.charAt(0)==' ')
+{
+document.getElementById("name").innerHTML="** check name";
+return 1;
+}
+else
+ {
+document.getElementById("name").innerHTML=" " ;
+return 0;
+ }
+}
+
+
+function checknumber()
+{
+ var p, pc ;
+ p=document.getElementById("c2");
+ 
+ pc= /^[0-9]{10,10}$/;
+ 
+ if(!p.value.match(pc) )
+{
+document.getElementById("mobile").innerHTML="** check number";
+return 1;
+}
+else 
+ {
+document.getElementById("mobile").innerHTML='';
+return 0;
+ }
+}
+
+
+function checkemail()
+{
+ var e, ec;
+ e=document.getElementById("c3");
+ 
+ ec= /^[0-9a-zA-Z_-]+\@[a-zA-Z0-9]+\.[a-zA-Z]{2,6}$/;
+ 
+ if(!e.value.match(ec) )
+{
+document.getElementById("mail").innerHTML="** check mail";
+return 1;
+}
+else 
+ {
+document.getElementById("mail").innerHTML='';
+return 0;
+ }
+}
+  
+
+
+  function checkland()
+{
+ var m, mc;
+ m=document.getElementById("c4");
+ 
+ mc= /^[0-9]{2,2}$/;
+ 
+ if(!m.value.match(mc) )
+{
+document.getElementById("land").innerHTML= "** check input";
+return 1;
+}
+else 
+ {
+document.getElementById("land").innerHTML='';
+return 0;
+ }
+}
+
+
+function bill()
+ {
+ if(checkname()==0 || checknumber()==0 || checkemail()==0 || checkland()==0 )
+ {
+ var a,b,c,d,e,f,g,z;
+ a=document.getElementById("c1").value;
+ b=document.getElementById("c2").value;
+ c=document.getElementById("c3").value;
+ d=document.getElementById("c4").value;
+ e=document.getElementById("c5").value;
+ f=document.getElementById("c6").value;
+ g= parseInt((d*1000)+(e*15000));
+ document.getElementById("mn").value="Dear "+a+"\n";
+ document.getElementById("mn").value+="Thank you for  Investing\n";
+ document.getElementById("mn").value+="Your product details are:\n";
+ document.getElementById("mn").value+="your idustry require "+c4+"land\n";
+ document.getElementById("mn").value+="electricity at Rs "+c5+"\n";
+ document.getElementById("mn").value+="your pan no. is "+c6+"\n";
+ document.getElementById("mn").value+="Total Requirement cost = Rs "+g+"\n";
+ document.getElementById("mn").value+="Detail has been sent on your e-mail id.";
+ }
+ else
+ {
+ checkname();
+ checknumber();
+ checkemail();
+ checkland();
+ 
+ alert("plz check entered data");
+ }
+ 
+ }
+
+</script>
+
+
+<style>
+
+#a11{position:fixed; width:100%; height:15%; left:0%; top:0%; background-color: #00ff99;
+                   box-shadow:0px 1px 4px black; overflow:hidden; font-size:500%; font-style:sherif;
+				   font-color:red;font-face:bold;}
+
+
+#a5{left:0%; top:15%; width:30%; height:15%; background-color:#ff9966; position:absolute;}
+	#y20{top:0%; left:0%; position:absolute; width:300%; height:100%;}
+					#y20:hover{width:350%; height:110%; left:2%; top:6%;}
+    #y21{top:5%; left:26%; position:absolute; width:100%; height:100%;}
+	  
+    #y22{top:0%; left:52%; position:absolute; width:300%; height:100%;}
+					#y22:hover{width:350%; height:110%; left:57%; top:6%;}
+				                                                                                    
+		           		   
+				   
+				   
+				   
+#a13{left:30%; top:15%; width:70%; height:15%; background-color:#ff9966; position:absolute;}				   
+    #b11{top:18%;  left:10%; width:15%; height:70%; position:absolute; background-color:#000080; Font-size:100%;}
+            #b11:hover{background-color:lime;}
+	#b12{top:18%;  left:25%; width:15%; height:70%; position:absolute; background-color:navy;}
+	        #b12:hover{background-color:lime;}
+	#b13{top:18%; left:40%; width:15%; height:70%; position:absolute; background-color:navy; }
+	        #b13:hover{background-color:lime;}
+	#b14{top:18%; left:55%; width:15%; height:70%; position:absolute; background-color:navy;}
+				#b14:hover   #y11{top:44%; left:1%; width:100%; height:60%; position:relative; font-size:100%;}
+				#b14:hover   #y12{top:46%; left:1%; width:100%; height:60%; position:relative; font-size:100%;}
+				#b14:hover   #y13{top:48%; left:1%; width:100%; height:60%; position:relative; font-size:100%;}
+				#b14:hover   #y14{top:50%; left:1%; width:100%; height:60%; position:relative; font-size:100%;}
+				#b14:hover   #y15{top:52%; left:1%; width:100%; height:60%; position:relative; font-size:100%;}
+				#b14:hover   #y16{top:54%; left:1%; width:100%; height:60%; position:relative; font-size:100%;}  	
+	            #b14:hover   #y17{top:56%; left:1%; width:100%; height:60%; position:relative; font-size:100%;}
+				#b14:hover   #y18{top:58%; left:1%; width:100%; height:60%; position:relative; font-size:100%;}
+				#b14:hover   #y19{top:60%; left:1%; width:100%; height:60%; position:relative; font-size:100%;}
+	    #b14:hover{background-color:lime;}	
+	#b15{top:18%; left:70%; width:15%; height:70%; position:absolute; background-color: navy;}
+	       #b15:hover{background-color:lime;}      
+	#b16{top:18%; left:85%; width:15%; height:70%; position:absolute; background-color:navy;}
+		#b16:hover{background-color:lime;}
+                                              
+											
+                        .m{background-color:navy;visibility:hidden;}
+				   #b14:hover .m{background-color:navy;visibility:visible;}
+                            											
+
+
+#a1{top:10%; left:0%; height:21%; width:100%; background-color:black; position:absolute;}
+
+
+
+#a3{top:50%; left:20%; height:120%; width:70%; background-color:#ccffeb; position:absolute;}
+     
+	 #b1{top:2%; left:0%; height:10%; width:100%; background-color:navy; position:absolute; font-size:250%; align:center;}
+	 
+	 #b2{top:14%; left:5%; height:80%; width:80%; background-color:#ccffeb; position:absolute;}
+	 
+body{background-color:black;}	 
+
+
+</style>
+</head>
+<body>
+
+<div id="a1">                     </div>
+
+
+
+<div id="a3"> 
+            <div id="b1"><font color="white"> BOOOKING           SPACE	</font>			</div>
+            <div id="b2"><br>
+			              <br>
+						  <br>
+	<center>
+             NAME: <input type="text" id="c1" onblur="checkname();">
+			<span id="name"></span>
+						<br>
+						<br>
+			PHONE: <input type="text" id="c2" maxlength="10" onblur="checknumber();">
+			<span id="mobile"> </span>
+						<br>
+						<br>
+			EMAIL: <input type="text" id="c3" onblur="checkemail();">
+			<span id="mail"> </span>
+    
+	        <br>
+	        <br>
+			<br>
+	        LAND REQUIREMENT:<input type="text" id="c4"  maxlength="10" onblur="checkland();">   (in sq. km)
+            <span id="land">       </span>	
+         <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp   <font color="blue">     *Terms and condition	</font>		
+	<br>
+	<div id="a6">                     </div>
+	<br>
+	<br>
+	         ELECTRICITY REQUIREMENT:<select id="c5">
+                             
+                              <option value="10000">    10000                             </option>
+                               <option value="20000">    20000                             </option>
+                              <option value="30000">     30000                            </option>
+                              <option value="40000">    40000                             </option>
+							  <option value="50000">     50000                            </option>
+							  <option value="above 50000">  above 50000                                </option>
+                              </select>						(in KW/Hr)	  
+            <span id="electricity">       </span>
+	                          <br>
+	                          <br>
+	                           <br>
+	                      PAN NO:  <input type="text" id="c6" onblur="checkpan();" maxlength="12"> 
+                          <span id="pan">       </span>			
+
+	</center>
+	<br><br><br><br><br><br><br><br><br><br>
+
+<button onclick="bill()">     SUBMIT          </button>
+<br>
+<br>
+<br>
+<textarea rows="5" cols="40" id="mn">           </textarea>
+<br>
+<br>
+</div>
+
+ </div>
+ 
+ 
+
+<div id="a5"><div id="y20"> <img src="khd.jpg " height="100%" width="8%">              </div>
+             <div id="y21">   <img src="ministry.png">                               </div>
+			 <div id="y22">  <img src="download.png " height="100%" width="8%">      </div> </div>
+			  <center>       
+<div id="a13">             <div id="b11"><a href="index.html">  <br><font color="white">  HOME          </font> </a>     </div>
+            <div id="b12"><a href="about.html"><br><font color="white">    ABOUT                </font></a>    </div>
+			<div id="b13"><A href="polo.html"> <br><font color="white">  INVEST IN JHARKHAND     </font></a>            </div>
+			<div id="b14"> <br><font color="white"> RESOURCES </font>
+				<div id="y11" class="m"><a href="mines.html"> <font color="white"> Mines and Minerals   </font> </a>  </div> 
+				<div id="y12" class="m"><a href="forest.html"><font color="white">    Forests & Enviroment  </font></a></div> 
+				<div id="y13" class="m"><a href="auto.html"><font color="white">     Automobiles and Auto Components </font></a> </div> 
+				<div id="y14" class="m"> <a href="energy.html" ><font color="white"> Energy Infrastructure    </font></a> </div> 
+				<div id="y15" class="m"><a href="industry.html"><font color="white"> Industrial Infrastructure </font> </a>      </div> 		
+				<div id="y16" class="m"> <a href="tourism.html"><font color="white">  Tourism  </font></a> </div> 
+				<div id="y17" class="m"><a href="textile.html"><font color="white">  Textile  </font></a> </div> 
+				<div id="y18" class="m"><a href="edu.html"><font color="white">Educational & Skill Development </font>  </a>   </div> 
+			    <div id="y19" class="m"><a href="agri.html"><font color="white"> Agri & Food Processing    </font>    </a>   </div> 
+		     </div>
+			<div id="b15"><a href="booking.html"> <br><font color="white">BOOKING                    </font> </a>                   
+		</div>
+		
+		<div id="b16"><a href="contact.html"> <br><font color="white">CONTACT  US......</font></a> </div>
+</center>
+		</div>
+
+<div id="a11"><font color="black"><marquee><b>  MOMENTUM JHARKHAND   </b>  </marquee></font>         </div>
+
+
+
+
+
+
+</body>
+</html>
